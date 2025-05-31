@@ -1,7 +1,7 @@
 - name: play level var
   hosts: local
   connection: local
-  task:
+  tasks:
     - name: print cource info
       ansible-builtin-debug:
         msg: hello
