@@ -3,14 +3,14 @@ name: my ansibel file
 #connection: local host
 host: frontend
 become: yes
-  task:
-  - name: install nginx
-    ansible.builtin.package:
-      name: nginx
-      state: present
+task:
+- name: install nginx
+  ansible.builtin.package:
+    name: nginx
+    state: present
 
-  - name: start nginx
-    ansible.builtin.service:
-      name: nginx
-      state: started
-      enable: yes
+- name: start nginx
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enable: yes
