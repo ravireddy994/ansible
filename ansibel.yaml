@@ -1,16 +1,16 @@
-name: my ansibel file
+- name: my ansibel file
 #host: local
 #connection: local host
-host: frontend
-become: yes
-task:
-- name: install nginx
-  ansible.builtin.package:
-    name: nginx
-    state: present
+  host: frontend
+  become: yes
+  task:
+  - name: install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
 
-- name: start nginx
-  ansible.builtin.service:
-    name: nginx
-    state: started
-    enable: yes
+  - name: start nginx
+    ansible.builtin.service:
+      name: nginx
+      state: started
+      enable: yes
