@@ -2,6 +2,7 @@ name: my ansibel file
 #host: local
 #connection: local host
 host: frontend
+become: yes
   task:
   - name: install nginx
     ansible.builtin.package:
