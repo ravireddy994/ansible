@@ -4,4 +4,4 @@
   tasks:
   - name: print cource info
     ansible-builtin-debug:
-      msg: hello
+      msg: hello all
