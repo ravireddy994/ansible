@@ -1,8 +1,9 @@
 - name: Practice file 
   hosts: local
   connection: local
-  var_files: var.yaml
+  vars_files: 
+  - var.yaml
   - tasks:
-      - name: print the varibles
-        ansible.builtin.debug:
-          msg: "{{ COURSE }}, {{ DURATION }}, {{ TRINER }}"
+  - name: print the varibles
+    ansible.builtin.debug:
+    msg: "{{ COURSE }}, {{ DURATION }}, {{ TRINER }}"
