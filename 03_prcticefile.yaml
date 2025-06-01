@@ -6,4 +6,4 @@
   tasks:
   - name: print the varibles
     ansible.builtin.debug:
-    msg: "{{ COURSE }}, {{ DURATION }}, {{ TRINER }}"
+      msg: "{{ COURSE }}, {{ DURATION }}, {{ TRINER }}"
